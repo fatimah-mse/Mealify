@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --red: #dc3545;
+    --black: #000;
+    --bg-black: #00000088;
+    --white: #fff;
+    --light-gray: #eeeeee;
+}
+h1 {
+    font-family: "Indie Flower";
+    font-size: 45px;
+    line-height: 66px;
+}
+.navbar .icon , section .card, .sec-3 .map p{
+    cursor: pointer;
+}
+.nav-link, .hero .watch {
+    transition: all 0.2s ease-in-out;
+}
+.hero {
+    height: 100vh;
+    padding-top: 74px !important;
+    background-color: var(--light-gray);
+}
+.hero .btn {
+    border-radius:0 50px 50px 50px;
+}
+.hero .watch:hover {
+    color: var(--red) !important;
+}
+section svg {
+    bottom: -10px;
+}
+.sec-1 .card {
+    transition: all 0.6s ease-in-out;
+}
+.sec-2 {
+    background-color: var(--light-gray);
+}
+.sec-2 .img-details {
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.imge-after {
+    background-color: var(--bg-black);
+    height: 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.sec-2 .img-details:hover .imge-after{
+    display: flex;
+    height: 100%;
+}
+.sec-3 iframe {
+    height: 300px;
+}
+.sec-3 .contact-card .icon {
+    border-radius: 50%;
+}
+.sec-3 .map p:hover{
+    background-color: var(--bg-black) !important;
+    color: var(--white);
+}
+.sec-3 form{
+    margin: 20px 1px !important;
+}
+.sec-3 form .btn {
+    border-radius: 50px !important;
+}
+footer img {
+    width: 40px;
+}
+footer h5 {
+    border-bottom: 2px solid var(--white);
+}
+@media screen and (min-width:992px) {
+    .nav-link::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+        background-color: var(--red);
+        transition: all 0.4s ease-in-out;
+    }
+    .nav-link.active::after,
+    .nav-link:hover, .nav-link:focus,
+    .nav-link:hover:after, .nav-link:focus:after {
+        width: 100%;
+        color: var(--black) !important;
+    }
+    .sec-1 .card:hover {
+        transform: scale(1.05);
+        border: 2px solid var(--red);
+    }
+}
+@media screen and (max-width:991px) {
+    .nav-link:hover {
+        background-color: var(--red);
+        color: var(--white) !important;
+    }
+    .hero img {
+        width: 250px;
+    }
+}
+@media screen and (max-width:578px) {
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p , .nav-link {
+        font-size: 15px !important;
+    }
+    a, .btn {
+        font-size: 12px !important;
+    }
+    .hero img {
+        width: 180px;
+    }
+}

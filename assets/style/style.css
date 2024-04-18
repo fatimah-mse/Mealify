@@ -24,6 +24,17 @@ h1 {
     padding-top: 74px !important;
     background-color: var(--light-gray);
 }
+.hero div img:hover {
+    animation: rotate 0.2s ease-in-out infinite alternate backwards;
+}
+@keyframes rotate {
+    form {
+        rotate: -10deg;
+    }
+    to {
+        rotate: 10deg;
+    }
+}
 .hero .btn {
     border-radius:0 50px 50px 50px;
 }

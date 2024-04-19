@@ -6,12 +6,13 @@
     --black: #000;
     --bg-black: #00000088;
     --white: #fff;
+    --icon-black: #888585;
+    --off-white: #fefefe4b;
     --light-gray: #eeeeee;
 }
 h1 {
     font-family: "Indie Flower";
     font-size: 45px;
-    line-height: 66px;
 }
 .navbar .icon , section .card, .sec-3 .map p{
     cursor: pointer;
@@ -35,9 +36,6 @@ h1 {
         rotate: 10deg;
     }
 }
-.hero .btn {
-    border-radius:0 50px 50px 50px;
-}
 .hero .watch:hover {
     color: var(--red) !important;
 }
@@ -45,7 +43,21 @@ section svg {
     bottom: -10px;
 }
 .sec-1 .card {
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.sec-1 .social {
+    background-color: var(--off-white);
+    display: none;
+}
+.sec-1 .social .icon{
+    color: var(--icon-black);
+    font-size: 18px;
+}
+.sec-1 .card:hover .social {
+    display: flex;
+}
+.sec-1 .card:hover {
+    transform: scale(1.02);
 }
 .sec-2 {
     background-color: var(--light-gray);
@@ -86,6 +98,16 @@ footer img {
 footer h5 {
     border-bottom: 2px solid var(--white);
 }
+.to-top {
+    border-radius: 50%;
+    padding: 10px 12px;
+    right: -70px;
+    cursor: pointer;
+    transition:all 3s ease-in-out;
+}
+.to-top.show{
+    right: 5px;
+}
 @media screen and (min-width:992px) {
     .nav-link::after {
         content: "";
@@ -100,14 +122,13 @@ footer h5 {
         transition: all 0.4s ease-in-out;
     }
     .nav-link.active::after,
-    .nav-link:hover, .nav-link:focus,
-    .nav-link:hover:after, .nav-link:focus:after {
+    .nav-link:hover,
+    .nav-link:hover:after {
         width: 100%;
         color: var(--black) !important;
     }
-    .sec-1 .card:hover {
-        transform: scale(1.05);
-        border: 2px solid var(--red);
+    .hero .btn {
+        border-radius:0 50px 50px 50px;
     }
 }
 @media screen and (max-width:991px) {
@@ -118,19 +139,24 @@ footer h5 {
     .hero img {
         width: 250px;
     }
+    .hero .btn {
+        border-radius: 50px;
+    }
 }
 @media screen and (max-width:578px) {
-    h1 {
-        font-size: 25px;
-        line-height: 35px;
+    .hero h1 {
+        font-size: 40px;
+    }
+    section h1 {
+        font-size: 30px;
     }
     h4 {
         font-size: 18px;
     }
     p , .nav-link {
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
-    a, .btn {
+    a, .btn{
         font-size: 12px !important;
     }
     .hero img {

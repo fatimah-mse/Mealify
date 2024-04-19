@@ -29,11 +29,12 @@
             <nav class="navbar navbar-expand-lg bg-white fixed-top number-2 shadow">
                 <div class="container">
                     <a class="navbar-brand fs-2 fw-bold" href="#">Mealify<span class="text-danger">.</span></a>
-                    <button class="navbar-toggler text-danger border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars fa-lg"></i>
+                    <i class="fa-solid fa-moon ms-auto ms-4 me-4 fa-2xl order-lg-2"></i>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fa-xl"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-lg-0 mt-2 mt-lg-0">
+                        <ul class="navbar-nav m-auto mb-lg-0 mt-2 mt-lg-0">
                             <li class="nav-item me-lg-3 position-relative text-center">
                                 <a class="nav-link active text-black-50 fw-bold fs-5 rounded" aria-current="page" href="#hero">Home</a>
                             </li>
@@ -53,16 +54,16 @@
 
             <!-- Hero -->
             <div class="hero position-relative d-flex align-items-center" id="hero">
-                <div class="container d-flex align-items-center flex-column-reverse flex-lg-row justify-content-evenly justify-content-lg-between h-100">
+                <div class="container d-flex align-items-center flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between h-100">
                     <div class="col-lg-5 col-md-12 text-center text-lg-start">
                         <h1 class="fw-bold">Enjoy Your Healthy Delicious Food</h1>
                         <p class="fw-bold text-black-50">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-                        <div>
-                            <button class="p-2 ps-3 pe-3 btn btn-danger text-white me-5">Book a Table</button>
-                            <a href="https://youtu.be/wZRzqr7geC0?si=TdaKnj4yRemNdgFU" target="_blank" class="watch text-decoration-none text-dark"><i class="icon fa-regular fa-circle-play fa-2xl me-2"></i>Watch a video</a>
+                        <div class="d-flex flex-column align-items-center flex-lg-row">
+                            <button class="p-2 ps-3 pe-3 mt-1 mb-1 me-lg-4 btn btn-danger text-white">Book a Table</button>
+                            <a href="https://youtu.be/wZRzqr7geC0?si=TdaKnj4yRemNdgFU" target="_blank" class="watch text-decoration-none text-dark mt-1 mb-1 m-lg-0"><i class="icon fa-regular fa-circle-play fa-2xl me-2"></i>Watch a video</a>
                         </div>
                     </div>
-                    <img class="col-lg-5 col-md-12" src="./assets/img/hero-img.png">
+                    <img class="col-lg-5 col-md-12 img-fluid" src="./assets/img/hero-img.png">
                 </div>
             </div>
             
@@ -78,17 +79,23 @@
                 <div class="container">
                     <div class="row d-flex justify-content-evenly align-items-center">
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card mt-2 mb-2 shadow">
-                                <div class="position-relative">
+                            <div class="card mt-2 mb-2 shadow position-relative">
+                                <div class="position-relative number-1">
                                     <img src="./assets/img/chefs-1.jpg" class="card-img-top">
                                     <svg class="position-absolute bg-transparent w-100 start-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L30,192C60,160,120,96,180,96C240,96,300,160,360,154.7C420,149,480,75,540,74.7C600,75,660,149,720,154.7C780,160,840,96,900,85.3C960,75,1020,117,1080,154.7C1140,192,1200,224,1260,218.7C1320,213,1380,171,1410,149.3L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
                                 </div>
-                                <div class="card-body text-center position-relative number-1">
+                                <div class="card-body text-center position-relative number-2">
                                     <h5 class="card-title fw-bold">Walter White</h5>
                                     <p class="card-text text-black-50 fw-bold">Master Chef</p>
                                     <p class="card-text fst-italic text-black-50 fw-bold">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
                                 </div>
-                              </div>
+                                <div class="social position-absolute number-3 flex-column end-0 m-3 rounded">
+                                    <a href="#"><i class="icon fa-brands fa-twitter p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-facebook p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-instagram p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-linkedin p-3"></i></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="card mt-2 mb-2 shadow">
@@ -101,7 +108,13 @@
                                     <p class="card-text text-black-50 fw-bold">Patissier</p>
                                     <p class="card-text fst-italic text-black-50 fw-bold">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
                                 </div>
-                              </div>
+                                <div class="social position-absolute number-3 flex-column end-0 m-3 rounded">
+                                    <a href="#"><i class="icon fa-brands fa-twitter p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-facebook p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-instagram p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-linkedin p-3"></i></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="card mt-2 mb-2 shadow">
@@ -114,7 +127,13 @@
                                     <p class="card-text text-black-50 fw-bold">Cook</p>
                                     <p class="card-text fst-italic text-black-50 fw-bold">Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
                                 </div>
-                              </div>
+                                <div class="social position-absolute number-3 flex-column end-0 m-3 rounded">
+                                    <a href="#"><i class="icon fa-brands fa-twitter p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-facebook p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-instagram p-3"></i></a>
+                                    <a href="#"><i class="icon fa-brands fa-linkedin p-3"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,8 +144,8 @@
                 <h5 class="container text-center fw-bold">GALLERY</h5>
                 <h1 class="container text-center fw-bold">Check <span class="text-danger">Our Gallery</span></h1>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
+                    <div class="row d-flex flex-wrap">
+                        <div class="col-lg-4 col-md-12">
                             <div class="position-relative mb-3 img-details">
                                 <img class="img-fluid rounded" src="./assets/img/meal-1.jpg">
                                 <div class="position-absolute imge-after text-center w-100 bottom-0 flex-column justify-content-center align-items-center rounded">
@@ -142,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-12">
                             <div class="position-relative mb-3 img-details">
                                 <img class="img-fluid rounded" src="./assets/img/meal-2.jpg">
                                 <div class="position-absolute imge-after text-center w-100 bottom-0 flex-column justify-content-center align-items-center rounded">
@@ -158,7 +177,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-12">
                             <div class="position-relative mb-3 img-details">
                                 <img class="img-fluid rounded" src="./assets/img/meal-3.jpg">
                                 <div class="position-absolute imge-after text-center w-100 bottom-0 flex-column justify-content-center align-items-center rounded">
@@ -196,7 +215,7 @@
                             <p onclick="show()" class="position-absolute p-2 rounded shadow bg-white" id="text">Press Here to Display The Map</p>
                         </div>
                         <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                            <div class="card p-3 d-flex flex-row contact-card bg-light rounded shadow border-0">
+                            <div class="card p-3 d-flex flex-row align-items-center contact-card bg-light rounded shadow border-0">
                                 <i class="icon fa-regular fa-map p-3 bg-danger text-white me-3 fa-xl"></i>
                                 <div>
                                     <h4 class="text-black-50 fw-bold">Our Address</h4>
@@ -205,7 +224,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                            <div class="card p-3 d-flex flex-row contact-card bg-light rounded shadow border-0">
+                            <div class="card p-3 d-flex flex-row align-items-center contact-card bg-light rounded shadow border-0">
                                 <i class="icon fa-regular fa-envelope p-3 bg-danger text-white me-3 fa-xl"></i>
                                 <div>
                                     <h4 class="text-black-50 fw-bold">Email Us</h4>
@@ -214,7 +233,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                            <div class="card p-3 d-flex flex-row contact-card bg-light rounded shadow border-0">
+                            <div class="card p-3 d-flex flex-row align-items-center contact-card bg-light rounded shadow border-0">
                                 <i class="icon fa-solid fa-phone p-3 bg-danger text-white me-3 fa-xl"></i>
                                 <div>
                                     <h4 class="text-black-50 fw-bold">Call Us</h4>
@@ -223,7 +242,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                            <div class="card p-3 d-flex flex-row contact-card bg-light rounded shadow border-0">
+                            <div class="card p-3 d-flex flex-row align-items-center contact-card bg-light rounded shadow border-0">
                                 <i class="icon fa-solid fa-share-nodes p-3 bg-danger text-white me-3 fa-xl"></i>
                                 <div>
                                     <h4 class="text-black-50 fw-bold">Opening Hours</h4>
@@ -245,7 +264,7 @@
                         <div class="col-12 mt-2 mb-2">
                             <textarea class="w-100 p-2" rows="6" placeholder="Message"></textarea>
                         </div>
-                        <input class="btn btn-danger col-6 col-lg-2 m-auto mt-2 mb-2 text-white p-2 ps-3 pe-3 fw-bold" type="submit" value="Send Message">
+                        <input class="btn btn-danger col-5 col-lg-2 m-auto mt-2 mb-2 text-white p-2 ps-3 pe-3 fw-bold" type="submit" value="Send Message">
                     </form>
                 </div>
             </section>
@@ -254,7 +273,7 @@
         <!-- End Main -->
 
         <!-- Start Footer -->
-        <footer class="bg-dark p-3">
+        <footer class="bg-dark pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
@@ -274,14 +293,16 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <h4 class="text-white mt-3 me-2">Subscribe our Newsletter</h4>
                         <p class="text-white mt-3 me-3">Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay up-to-date with all things Mealify!</p>
+                        <input type="email" placeholder="Enter Your Email Address" class="p-2 mt-1 mb-1 col-12 col-lg-7">
+                        <button class="bg-danger text-white text-center p-2 mt-1 mb-1 col-12 col-lg-4 border-danger"><i class="fa-solid fa-envelope me-2"></i>Subscribe</button>
                         <h4 class="text-white mt-3 me-2">Quick Links</h4>
                         <div class="row mt-2 me-2">
-                            <div class="col-lg-6 col-md-12 d-flex flex-column">
+                            <div class="col-6 d-flex flex-column">
                                 <a class="text-decoration-none text-white mt-2 me-2" href="#"><i class="fa-solid fa-angle-right me-2"></i>Menu</a>
                                 <a class="text-decoration-none text-white mt-2 me-2" href="#"><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
                                 <a class="text-decoration-none text-white mt-2 me-2" href="#"><i class="fa-solid fa-angle-right me-2"></i>Testimonial</a>
                             </div>
-                            <div class="col-lg-6 col-md-12 d-flex flex-column">
+                            <div class="col-6 d-flex flex-column">
                                 <a class="text-decoration-none text-white mt-2 me-2" href="#"><i class="fa-solid fa-angle-right me-2"></i>Promo</a>
                                 <a class="text-decoration-none text-white mt-2 me-2" href="#"><i class="fa-solid fa-angle-right me-2"></i>Contact</a>
                                 <a class="text-decoration-none text-white mt-2 me-2" href="#"><i class="fa-solid fa-angle-right me-2"></i>Our Partners</a>
@@ -301,6 +322,9 @@
             </div>
         </footer>
         <!-- End Footer -->
+
+        <!-- Scroll To Top -->
+        <i class="to-top fa-solid fa-arrow-up position-fixed d-flex justify-content-center align-items-center bottom-0 m-2 text-white bg-danger fa-xl" id="up" onclick="Top()"></i>
         
         <!-- JS Files -->
         <script src="./assets/js/all.min.js"></script>
